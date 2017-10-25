@@ -1,0 +1,48 @@
+.nav-toggle {
+    text-align: right;
+    .fa-bars {
+        cursor: pointer;
+    }
+}
+
+nav {
+    align-items: center;
+    background-color: $oc-teal-7;
+    height: 100vh;
+    font-family: inherit;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+        top: 0;
+        left: -200%;
+    text-align: center;
+    transition: left .5s;
+    width: 100%;
+    z-index: 99998;
+    .fa-close {
+        cursor: pointer;
+        position: absolute;
+            top: 2%;
+            right: 5%;
+    }
+}
+
+@media #{$md} {
+    nav .fa-close {
+        right: 2.5%;
+    }
+}
+
+.open {
+    left: 0%;
+    position: fixed;
+}
+
+.settings-table {
+    background-color: rgba($white, .1);
+    td {
+        vertical-align: middle;
+        padding: 1rem;
+    }
+}
